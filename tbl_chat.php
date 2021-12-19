@@ -1,3 +1,5 @@
+<?php
+
 --
 -- Table structure for table `tbl_chat`
 --
@@ -31,3 +33,4 @@ ALTER TABLE `tbl_chat`
 --
 ALTER TABLE `tbl_chat`
   MODIFY `chat_id` int(11) NOT NULL AUTO_INCREMENT;
+?>
