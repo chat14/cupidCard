@@ -4,5 +4,6 @@
             "@php script.php",
             "phpunit"
         ]
+{ "scripts": { "install-phpstan": [ "@putenv COMPOSER=phpstan-composer.json", "composer install --prefer-dist" ] } }  {"scripts-composer self-update --2}  { "scripts-descriptions": { "test": "Run all tests!" } }
     }
 }
