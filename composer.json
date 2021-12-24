@@ -13,7 +13,7 @@
            {
        "scripts-composer": { 
              "self":[
-                update --2]} 
+                "update --2"]} 
                  } 
 { 
             "scripts-descriptions": { 
