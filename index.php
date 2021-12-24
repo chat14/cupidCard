@@ -6,6 +6,9 @@ if(isset($_POST['set_user1'])){
 }
 if(isset($_POST['set_user2'])){
     $_SESSION['ses_user_id2']=$_POST['userID'];
+heroku pipelines:add example-pipeline -a example-staging-app
+? Stage of example-staging: staging
+Adding example-staging to example pipeline as staging... done
 }
 ?>
 <!DOCTYPE html>
