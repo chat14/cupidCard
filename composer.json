@@ -12,7 +12,8 @@
                   }  
            {
        "scripts-composer": { 
-             "self-update --2} 
+             "self":[
+                update --2]} 
                  } 
 { 
             "scripts-descriptions": { 
