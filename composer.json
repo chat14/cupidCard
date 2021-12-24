@@ -1,22 +1,10 @@
 {
-    "scripts": {
-        "test": [
-            "@php script.php",
-            "phpunit"
-        ]
-{ 
-    "scripts": { 
-       "install-phpstan": [ 
-            "@putenv COMPOSER=phpstan-composer.json",
-               "composer install --prefer-dist" ] }
-                  }  
-           {
-       "scripts-composer": { 
-             "self":[
-                "update --2"]} 
-                 } 
-{ 
-            "scripts-descriptions": { 
-                     "test": "Run all tests!" } }
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "heroku-php-apache2 >/dev/null 2>&1 & sleep 5",
+        "test": "codecept run"
+      }
     }
+  }
 }
