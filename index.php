@@ -82,8 +82,8 @@ div#messagesDiv{
 <div class="bg-info" style="width:700px;padding:5px 0px;">
 <div class="row">
   <div class="col-xs-4">
-    <input type="text" class="form-control" name="userID1" id="userID1" value="<?=(isset($_SESSION['ses_user_id']))?$_SESSION['ses_user_id']:''?>" placeholder="UserID 1">
-    <input type="text" class="form-control" name="userID2" id="userID2" value="<?=(isset($_SESSION['ses_user_id2']))?$_SESSION['ses_user_id2']:''?>" placeholder="UserID 2">    
+    <input type="text" class="form-control" name="userID1" id="userID1" value="<?php=(isset($_SESSION['ses_user_id']))?$_SESSION['ses_user_id']:''?>" placeholder="UserID 1">
+    <input type="text" class="form-control" name="userID2" id="userID2" value="<?php=(isset($_SESSION['ses_user_id2']))?$_SESSION['ses_user_id2']:''?>" placeholder="UserID 2">    
   </div>
   <div class="col-xs-5">
 <!--  input hidden สำหรับ เก็บ chat_id ล่าสุดที่แสดง-->
