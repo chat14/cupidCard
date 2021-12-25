@@ -94,7 +94,7 @@ $ heroku help pipelines
     3.2 ให้เลือก user 1 แล้วกดปุ่ม Set user 2<br>    
 4. เร่ิมการสนทนา
 <br>
-<form name="form1" method="get" action="https://github.com/chat14/cupidChat/blob/gh-pages/ajax_chat.php">
+<form name="form1" method="get" action="https://kolkrabbi.heroku.com/hooks/github">
   <select name="userID" id="userID">
     <option value="1">User 1</option>
     <option value="2">User 2</option>    
@@ -108,7 +108,7 @@ var load_chat; // กำหนดตัวแปร สำหรับเป็�
 var first_load=1; // กำหนดตัวแปรสำหรับโหลดข้อมูลครั้งแรกให้เท่ากับ 1
 load_chat = function(userID){
     var maxID = $("#h_maxID").val(); // chat_id ล่าสุดที่แสดง
-    $.post("ajax_chat.php",{
+    $.post("ajax_index.php",{
         viewData:first_load,
         userID:userID,
         maxID:maxID
