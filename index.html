@@ -84,12 +84,15 @@
     initPayPalButton();
   </scrip     
 
-  <div class="modal2 fade" id="mymodal2" role="dialog">
-	<div class="modal2-dialog mymodal-lg">
-    <div class="modal2-container2">
-    </div>
-    </div>
-</div>
+  <!--จะโหลดมาไว้ใน  server  หรือใช้แบบนี้ก็ได้ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+  
+  <script>
+      function openColorBox(){
+		  //กำหนดขนาดและหน้าเว็บที่จะแสดงใน popup สามารถใส่เป็นภาพก็ได้นะครับ
+        $.colorbox({iframe:true, width:"200px", height:"100px", href: "http://devbanban.com/"});
+      }
   <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
