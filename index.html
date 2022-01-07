@@ -12,13 +12,13 @@
   <th> 点击通话后，会进入先支付服务费的弹窗页面。</th><th>
 使用信用卡支付时，支付完成后点击底部黑色按钮，会通过网站链接通话链接。 </th>
 </tr> 
-<tr>
+<tr><div class="container">
 <td><p >name kate russian    
 俄罗斯女孩 27 岁 北空-上海坐标
 1小时3000元
-2 小时 5000</p><button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container">call</button> < class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container"><img src="https://www.linkpicture.com/q/IMG_20220106_134017_000.jpg" type="image"></a></td><td><p> name maegan 25岁的克罗地亚女孩 京沪坐标
+2 小时 5000</p><button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container">call</button> < class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container"><img src="https://www.linkpicture.com/q/IMG_20220106_134017_000.jpg" type="image"></a></td></div><td><div class="container2"><p> name maegan 25岁的克罗地亚女孩 京沪坐标
 1小时300英镑</p>
-<button type="button" class="btn btn-warning btn-lg" data-toggle="homme" data-target="#dogome">call</button> < class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container><img src="https://www.linkpicture.com/q/IMG_20220106_133955_027.jpg" type="image"></a></td>
+<button type="button" class="btn btn-warning btn-lg" data-toggle="modal2" data-target="#mymodal2">call</button> < class="btn btn-warning btn-lg" data-toggle="modal2" data-target="#mymodal2><img src="https://www.linkpicture.com/q/IMG_20220106_133955_027.jpg" type="image"></a></td>
 </tr>
 </tr>
 <tr>
@@ -38,9 +38,10 @@
 </table>
   <div class="modal fade" id="paypal-button-container" role="dialog">
 	<div class="modal-dialog modal-lg">
+     <div class="modal-container">
     	</div>
        </div>
-
+       </div>
        <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
@@ -83,10 +84,12 @@
     initPayPalButton();
   </scrip     
 
-  <div class="homme fade" id="dogome" role="dialog">
-	<div class="homme-dialog homme-lg">
+  <div class="modal2 fade" id="mymodal2" role="dialog">
+	<div class="modal2-dialog mymodal-lg">
+    <div class="modal2-container2">
     </div>
     </div>
+</div>
   <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
@@ -112,7 +115,7 @@
             console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
             // Show a success message within this page, e.g.
-            const element = document.getElementById('dogome');
+            const element = document.getElementById('mymodal2');
             element.innerHTML = '';
             element.innerHTML = '
 <a href="tel:+85293075371"><img src="path/to/phone/icon.jpg" />call+85293075371</a>';
@@ -125,7 +128,7 @@
         onError: function(err) {
           console.log(err);
         }
-      }).render('#dogome');
+      }).render('#mymodal2');
     }
     initPayPalButton();
   </script>
