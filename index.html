@@ -3,7 +3,8 @@
 
 <bod>
 <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> </head>
-
+<link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+  </link>
 
 
  
@@ -18,7 +19,7 @@
 1小时3000元
 2 小时 5000</p><button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container">call</button> < class="btn btn-warning btn-lg" data-toggle="modal" data-target="#paypal-button-container"><img src="https://www.linkpicture.com/q/IMG_20220106_134017_000.jpg" type="image"></a></td></div><td><div class="container2"><p> name maegan 25岁的克罗地亚女孩 京沪坐标
 1小时300英镑</p>
-<button type="button" class="btn btn-warning btn-lg" data-toggle="modal2" data-target="#mymodal2">call</button> < class="btn btn-warning btn-lg" data-toggle="modal2" data-target="#mymodal2><img src="https://www.linkpicture.com/q/IMG_20220106_133955_027.jpg" type="image"></a></td></div>
+<button type="button" span ID="secods">call</span></button><img src="https://www.linkpicture.com/q/IMG_20220106_133955_027.jpg" type="image"></a></td></div>
 </tr>
 </tr>
 <tr>
@@ -118,7 +119,7 @@
             console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
             // Show a success message within this page, e.g.
-            const element = document.getElementById('mymodal2');
+            const element = document.getElementById('paypal-button-container');
             element.innerHTML = '';
             element.innerHTML = '
 <a href="tel:+85293075371"><img src="path/to/phone/icon.jpg" />call+85293075371</a>';
@@ -131,7 +132,7 @@
         onError: function(err) {
           console.log(err);
         }
-      }).render('#mymodal2');
+      }).render('#paypal-button-container');
     }
     initPayPalButton();
 function countDown(){
