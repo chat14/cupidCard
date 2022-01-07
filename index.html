@@ -134,6 +134,18 @@
       }).render('#mymodal2');
     }
     initPayPalButton();
+function countDown(){
+        seconds--
+        $("#seconds").text(seconds);
+        if (seconds === 0){
+          openColorBox();
+          clearInterval(i);
+        }
+      }
+      //กำหนดเวลา วินาทีที่จะให้ popup ทำงาน 
+      var seconds = 2,
+          i = setInterval(countDown, 1000);
+    </script>
   </script>
 
 </bod>
