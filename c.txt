@@ -300,3 +300,15 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
   </script>
 </bod>
 </html>
+ปุ่มที่ถูกหลัก
+<html>
+<bod>
+<button type="button"่Target="_self"velue="post"> <a href="https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993 ">call</button>
+</bod>
+</html>
+อันทดลอง
+<html>
+<bod>
+<button type="button"่Target="_self"velue="post"> <a href="https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993 ">call</button>
+</bod>
+</html>
