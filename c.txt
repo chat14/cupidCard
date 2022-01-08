@@ -309,8 +309,62 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 อันทดลอง
 <html>
 <bod>
-<button><div class="paypal.Buttons" onclick="initPayPalButton()">Callme <span class="text-align: center" id="paypal-button-container"></span></div>
+<button><div class="paypal.Buttons" class="popup" onclick="initPayPalButton()">Callme <span class="popupcontent" id="mypopup"></span></div>
 </button>
+style>
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popupcontent {
+  visibility: hidden;
+  width: 360px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 60px;
+  padding: 80px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popupcontent::after {
+  content: "paypal-button-container";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px;
+  border-width: 200px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
 
 <marquee bgcolor="#A9E0B8" direction="lefe" scrollamount="5">点击底部黑色按钮通过信用卡/借记卡支付佣金，支付完成后，系统将通过网站向您发送通话链接。</marquee>
 <div id="smart-button-container">
@@ -359,7 +413,14 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
     }
     initPayPalButton();
   </script>
-</a>
+<script>
+// When the user clicks on <div>, open the popup
+function popupcontent() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
 </bod>
 </html>
 สร้างป๊อบอัพด้วยวิธีw3h
