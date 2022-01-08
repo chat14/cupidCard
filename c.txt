@@ -309,7 +309,9 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 อันทดลอง
 <html>
 <bod>
-<button type="button"่Target="_self"velue="post"> <div=mo <marquee bgcolor="#A9E0B8" direction="lefe" scrollamount="5">点击底部黑色按钮通过信用卡/借记卡支付佣金，支付完成后，系统将通过网站向您发送通话链接。</marquee>
+<button type="button"่Target="_self"velue="post"><a href="#model">class</a></button> 
+  class model() {
+<marquee bgcolor="#A9E0B8" direction="lefe" scrollamount="5">点击底部黑色按钮通过信用卡/借记卡支付佣金，支付完成后，系统将通过网站向您发送通话链接。</marquee>
 <div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
@@ -355,6 +357,7 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
       }).render('#paypal-button-container');
     }
     initPayPalButton();
-  </script></div>call</button>
+  </script>
+}
 </bod>
 </html>
