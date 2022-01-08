@@ -361,3 +361,12 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 </a>
 </bod>
 </html>
+สร้างป๊อบอัพด้วยวิธีw3h
+1.สร้างhtmlก่อน
+<html>
+<bod>
+<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+</bod>
+</html>
