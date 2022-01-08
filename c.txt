@@ -309,7 +309,7 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 อันทดลอง
 <html>
 <bod>
-<button><div class="paypal.Buttons" class="popup" onclick="initPayPalButton()">Callme <span class="popupcontent" id="mypopup"></span></div>
+<button><div class="popup_ID" class="smart-button-container" onclick="openFrom()">Callme <span class="popupcontent" id="myFrom"></span></div>
 </button>
 style>
 /* Popup container */
@@ -369,11 +369,16 @@ style>
 <marquee bgcolor="#A9E0B8" direction="lefe" scrollamount="5">点击底部黑色按钮通过信用卡/借记卡支付佣金，支付完成后，系统将通过网站向您发送通话链接。</marquee>
 <div id="smart-button-container">
       <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
+        
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
-  <script>
+<script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
+
+<script>
+function openForm() {
+     var popup_ID = paypal-button-container
+  document.getElementById("myForm").style.display = "block";
+
     function initPayPalButton() {
       paypal.Buttons({
         style: {
@@ -413,13 +418,7 @@ style>
     }
     initPayPalButton();
   </script>
-<script>
-// When the user clicks on <div>, open the popup
-function popupcontent() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
+
 
 </bod>
 </html>
