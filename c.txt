@@ -309,6 +309,52 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 อันทดลอง
 <html>
 <bod>
-<button type="button"่Target="_self"velue="post"> <a href="https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993 ">call</button>
+<button type="button"่Target="_self"velue="post"> <div=mo <marquee bgcolor="#A9E0B8" direction="lefe" scrollamount="5">点击底部黑色按钮通过信用卡/借记卡支付佣金，支付完成后，系统将通过网站向您发送通话链接。</marquee>
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'pay',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"paynumber","amount":{"currency_code":"HKD","value":20.8,"breakdown":{"item_total":{"currency_code":"HKD","value":20},"shipping":{"currency_code":"HKD","value":0},"tax_total":{"currency_code":"HKD","value":0.8}}}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script></div>call</button>
 </bod>
 </html>
