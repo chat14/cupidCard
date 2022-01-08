@@ -366,7 +366,7 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
 <html>
 <bod>
 <div class="popup" onclick="myFunction()">Click me!
-  <span class="popuptext" id="myPopup">Popup text...</span>
+  <span class="popuptext" id="myPopup">Popup text...</span></div>
 *//2.สร้างcss
 <style>
 /* Popup container */
@@ -422,6 +422,14 @@ https://webhook.site/4fbefed8-817f-4b07-9be2-e86d80dfe993
   to {opacity:1 ;}
 }
 </style>
-</div>
+*//3.สร้างจาวาสคริป
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
 </bod>
 </html>
