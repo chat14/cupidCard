@@ -76,7 +76,101 @@
 <div class="dropdown">
 <button class="dropbtn">Social Media</button>
 <div class="dropdown-content">
+<a name="ttps">
+       <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'pay',
+          
+        },
 
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"经纪费\n","amount":{"currency_code":"HKD","value":10.4,"breakdown":{"item_total":{"currency_code":"HKD","value":10},"shipping":{"currency_code":"HKD","value":0},"tax_total":{"currency_code":"HKD","value":0.4}}}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+          // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '
+<a href="tel:+447883600578"><img src="path/to/phone/icon.jpg" />call+447883600578</a>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </scrip     
+
+  <!--จะโหลดมาไว้ใน  server  หรือใช้แบบนี้ก็ได้ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+  
+  <script>
+      function openColorBox(){
+		  //กำหนดขนาดและหน้าเว็บที่จะแสดงใน popup สามารถใส่เป็นภาพก็ได้นะครับ
+        $.colorbox({iframe:true, width:"200px", height:"100px", href: "http://devbanban.com/"});
+      }
+  <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'pay',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"经纪费","amount":{"currency_code":"HKD","value":10.4,"breakdown":{"item_total":{"currency_code":"HKD","value":10},"shipping":{"currency_code":"HKD","value":0},"tax_total":{"currency_code":"HKD","value":0.4}}}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '
+<a href="tel:+85293075371"><img src="path/to/phone/icon.jpg" />call+85293075371</a>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+</script>
+</a>
 <a href="https://www.google.com">Google</a>
 
 
