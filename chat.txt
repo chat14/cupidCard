@@ -181,16 +181,26 @@
 <html>
 <bod>
 ป๊อบอัพ9
-<input type="button" name="open" value="open" onclick="open_popup('sample.html')" />
-
+<input type="button" name="open" value="open" onclick="open_popup('sample.html')"ID="paypal-button-container" />
+  <script src="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"></script>
+ 
 <script>
 
 function open_popup(url){
 
-window.open(url="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"
+window.open(url,
  ",null,"height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");
 }
-document.getElementById('paypal-button-container');
+function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'pay',
+          
+        },
+const element =document.getElementById('paypal-button-container');
          
 </script
 
