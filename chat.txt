@@ -171,10 +171,29 @@
     initPayPalButton();
 </script>
 </a>
-<a href="https://www.google.com">Google</a>
+
 
 
 </div>
 </div>
+</bod>
+</html>
+<html>
+<bod>
+ป๊อบอัพ9
+<input type="button" name="open" value="open" onclick="open_popup('sample.html')" />
+
+<script>
+
+function open_popup(url){
+
+window.open(url="https://www.paypal.com/sdk/js?client-id=ASB3cJOuGSdALvo9hzxye3OR8392zF-h6bRSJ04x0WhzDFYxAZXjOooNnlwMFm3w4Ks4YskftFWXRPjD&enable-funding=venmo&currency=HKD" data-sdk-integration-source="button-factory"
+ ",null,"height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");
+}
+document.getElementById('paypal-button-container');
+         
+</script
+
+
 </bod>
 </html>
