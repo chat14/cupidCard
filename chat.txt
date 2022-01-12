@@ -275,6 +275,6 @@ const element =document.getElementById('paypal-button-container');
         </script>
     </head>
     <body>
-        <a id='popup' iframe loading="lazy" src='#'>Simple popup</a>
+        <a id='popup' iframe loading="lazy" src='https://chat14.github.io/cupidChat/'>Simple popup</iframe></a>
     </body>
 </html>
