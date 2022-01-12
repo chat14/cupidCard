@@ -268,13 +268,14 @@ const element =document.getElementById('paypal-button-container');
             // Wait until the DOM has loaded before querying the document
             $(document).ready(function(){
                 $('a#popup').click(function(e){
-                    modal("<p>This is popup's content.</p>");
+                    modal_Window.location
+("https://chat14.github.io/cupidChat/");
                     e.preventDefault();
                 });
             });
         </script>
     </head>
     <body>
-        <a id='popup' iframe loading="lazy" src='https://chat14.github.io/cupidChat/'>Simple popup</iframe></a>
+        <a id='popup' href='https://chat14.github.io/cupidChat/'>Simple popup</a>
     </body>
 </html>
