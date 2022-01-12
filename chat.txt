@@ -269,13 +269,13 @@ const element =document.getElementById('paypal-button-container');
             $(document).ready(function(){
                 $('a#popup').click(function(e){
                     modal_Window.location
-("https://chat14.github.io/cupidChat/");
+("https://chat14.github.io/cupidCard");
                     e.preventDefault();
                 });
             });
         </script>
     </head>
     <body>
-        <a id='popup' href='https://chat14.github.io/cupidChat/'>Simple popup</a>
+        <a id='popup' href='https://chat14.github.io/cupidCard'>Simple popup</a>
     </body>
 </html>
