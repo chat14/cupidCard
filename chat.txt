@@ -281,14 +281,15 @@ width: 500px;
             // Wait until the DOM has loaded before querying the document
             $(document).ready(function(){
                 $('a#popup').click(function(e){
-                    modal_Window.location
-("https://chat14.github.io/cupidCard',width=100,height=100");
+                    modal_Window.event
+("<button type="button',sref="width=100,height=100">ใช่มากๆ</button>);
                     e.preventDefault();
                 });
             });
         </script>
     </head>
     <body>
-        <a id='popup' href='https://chat14.github.io/cupidCard',width=100,height=100'>Simple popup</a>
+        <a id='popup' href="button type="button',sref="width=100,height=100">ใช่มากๆ</button>);
+   "'>Simple popup</a>
     </body>
 </html>
